@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags (Default) -->
+  <title>AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data</title>
+  <meta name="title" content="AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data">
+  <meta name="description" content="Frequently asked questions about JSON-LD for AI crawlers: Does Perplexity read JSON-LD? What schema types do AI engines prefer? How do I validate structured data?">
+  <meta name="keywords" content="perplexity schema generator, ai search engine structured data, json-ld for perplexity, perplexity structured data validator, openai search json-ld generator, claude search citation schema, ai crawler structured data">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" id="canonical" href="https://www.example.com/ai-search-schema-generator/faq">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/ai-search-schema-generator">
+  <meta property="og:title" content="Free AI Search Schema Generator — JSON-LD for Perplexity, OpenAI Search & Claude">
+  <meta property="og:description" content="Generate and validate JSON-LD structured data for AI search engines (Perplexity, OpenAI Search, Claude). Optimize for LLM citations. Free, instant, no sign-up.">
+  <meta property="og:image" content="https://www.example.com/ai-search-schema-generator/og-preview.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free AI Search Schema Generator — JSON-LD for Perplexity, OpenAI Search & Claude">
+  <meta name="twitter:description" content="Generate and validate JSON-LD structured data for AI search engines (Perplexity, OpenAI Search, Claude). Optimize for LLM citations. Free, instant, no sign-up.">
+  <meta name="twitter:image" content="https://www.example.com/ai-search-schema-generator/twitter-preview.png">
+
+  <!-- JSON-LD Schema (updated by JS for variants) -->
+  <script type="application/ld+json" id="jsonld-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "AI Engine Schema FAQ",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "A living FAQ about AI engine JSON-LD: Perplexity, OpenAI Search, Claude, and schema.org structured data.",
+    "url": "https://www.example.com/ai-search-schema-generator/faq"
+  }
+  </script>
+
+  <!-- Preload critical font or system font strategy -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="/assets/index-PAxLg4QV.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/style-Dwp3aMCp.css">
+</head>
+<body>
+  <!-- Skip link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="AI Search Schema Generator home">AI Search Schema</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#generator">Generator</a>
+      <a href="#validator">Validator</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <h1 id="page-title">AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data</h1>
+      <p class="lead" id="page-lead">Common questions about using JSON-LD to help AI search engines discover, index, and cite your content accurately.</p>
+      <a class="cta" href="#generator">Generate and Validate Schema</a>
+    </section>
+
+    <section id="generator" class="generator-section" aria-label="JSON-LD Generator">
+      <h2>Generate AI Search Engine Schema</h2>
+      <p class="section-lead">Select your target engine, fill in required fields, and validate the JSON-LD instantly.</p>
+
+      <div class="generator" id="generator">
+        <div class="tabs" role="tablist" aria-label="Target engine">
+          <button class="tab active" role="tab" aria-selected="true" data-engine="default">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-engine="perplexity">Perplexity</button>
+          <button class="tab" role="tab" aria-selected="false" data-engine="openai">OpenAI Search</button>
+          <button class="tab" role="tab" aria-selected="false" data-engine="claude">Claude</button>
+        </div>
+
+        <form id="schema-form" class="schema-form" novalidate>
+          <div class="field">
+            <label for="type" class="label">Schema Type</label>
+            <select id="type" class="select">
+              <option value="WebApplication">WebApplication</option>
+              <option value="SoftwareApplication">SoftwareApplication</option>
+              <option value="Organization">Organization</option>
+              <option value="FAQPage">FAQPage</option>
+              <option value="HowTo">HowTo</option>
+              <option value="Article">Article</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="name" class="label">Name</label>
+            <input id="name" class="input" type="text" required placeholder="My Awesome Tool">
+          </div>
+
+          <div class="field">
+            <label for="url" class="label">Canonical URL</label>
+            <input id="url" class="input" type="url" required placeholder="https://example.com">
+          </div>
+
+          <div class="field">
+            <label for="desc" class="label">Description</label>
+            <textarea id="desc" class="textarea" rows="2" required placeholder="What does this app or page do?"></textarea>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Generate JSON-LD</button>
+          </div>
+        </form>
+
+        <div class="result" id="result" aria-live="polite" style="min-height: 200px;">
+          <div class="result-header">
+            <span class="badge" id="badge">Default Generation</span>
+            <button id="copy-btn" type="button" class="btn small">Copy</button>
+          </div>
+          <pre class="code" id="output">// JSON-LD will appear here</pre>
+        </div>
+
+        <div class="content">
+          <h2>How to Use the AI Schema Generator</h2>
+          <p>
+            Modern AI search engines like Perplexity, OpenAI Search, and Claude parse structured data
+            to understand context and decide which sources to cite. By generating valid JSON-LD,
+            you help these AI crawlers extract meaningful entities without guessing.
+          </p>
+
+          <h3>Step-by-step JSON-LD generator for Perplexity</h3>
+          <p>
+            Perplexity runs hybrid search across the web and proprietary indexes.
+            Using <code>WebApplication</code> or <code>FAQPage</code> schema makes it
+            easier for Perplexity to identify structured answers that fit its
+            auto-generated summary format.
+          </p>
+
+          <h3>OpenAI Search and GPT Citation Schema</h3>
+          <p>
+            OpenAI’s search prototypes look for schema.org entries paired with clean canonical URLs,
+            accurate descriptions, and <em>dateModified</em>. Include these fields
+            to maximize citation quality in GPT-powered search experiences.
+          </p>
+
+          <h3>Claude and AI Summary Indexing</h3>
+          <p>
+            Claude relies heavily on article-level markers that align closely with
+            traditional SEO schema plus <code>author</code> and <code>mainEntityOfPage</code>.
+            Supplement article pages with FAQPage or HowTo schema for better retrieval.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="validator" class="validator">
+      <h2>Validation Best Practices</h2>
+      <p class="section-lead">Before you deploy, ensure your JSON-LD passes own checks and cross-engine validation.</p>
+
+      <div class="steps">
+        <div class="step">
+          <h3>Recursive JSON-LD validation explained</h3>
+          <p>
+            Check every property for type compliance. AI engines prefer explicit string typing for vocabulary labels
+            and arrays for multi-value properties like <code>offers</code> or <code>mainEntityOfPage</code>.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Schema properties AI engines expect</h3>
+          <p>
+            Make sure <code>name</code>, <code>url</code>, and <code>description</code> always exist.
+            Add <code>image</code>, <code>dateModified</code>, and <code>inLanguage</code> for stronger signals.
+          </p>
+        </div>
+        <div class="step">
+          <h3>Avoiding duplicate content with canonical URLs</h3>
+          <p>
+            Each schema block should point to the same <code>url</code> as the page’s <code>rel="canonical"</code>.
+            Inconsistent URLs between JSON-LD and the HTML <code>&lt;link&gt;</code> can confuse AI crawlers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Schema Examples for AI Search</h2>
+      <p class="section-lead">Reference implementations for Perplexity, OpenAI Search, Claude, and FAQPage entities.</p>
+
+      <div class="examples">
+        <div class="example">
+          <h3>Perplexity — WebApplication</h3>
+          <pre class="code">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Your Tool Name",
+  "url": "https://example.com",
+  "description": "...",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "Any",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}</pre>
+        </div>
+        <div class="example">
+          <h3>OpenAI Search — FAQPage</h3>
+          <pre class="code">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is this?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Short explanatory answer."
+      }
+    }
+  ]
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>AI Engine Schema FAQ</h2>
+
+      <h3>Does Perplexity read JSON-LD?</h3>
+      <p>Yes. Perplexity uses structured data to help identify article boundaries, applications, and Q&A entities it can cite in answers.</p>
+
+      <h3>What schema types help Claude citations?</h3>
+      <p>Article, FAQPage, and WebApplication are most useful. Always pair schema with an accurate description and canonical URL.</p>
+
+      <h3>Is this JSON-LD validator replacing official Google Rich Results Tests?</h3>
+      <p>No. This tool optimizes for AI engines. Use it together with Google’s tools and browser-based validation.</p>
+
+      <h3>Can schema help with outdated or competing content?</h3>
+      <p>Yes. HowTo and FAQ schemas add durable long-tail value and context that AI engines can rely on even when primary content changes.</p>
+    </section>
+
+    <section class="privacy">
+      <h2>Privacy & Data Usage</h2>
+      <p>
+        This tool runs entirely in your browser. Your inputs, schema blocks, and copies are never sent to a backend server.
+        We honor the same philosophy we teach: keep essential assets close and private.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> AI Search Schema Generator. Free, open source, and privacy-first.</p>
+  </footer>
+
+</body>
+</html>

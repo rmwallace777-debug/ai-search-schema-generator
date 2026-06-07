@@ -1,0 +1,363 @@
+/* ============================================
+   AI Search Schema Generator — CSS
+   Focused on 100/100 Lighthouse targets,
+   zero layout shift, fast paint
+   ============================================ */
+
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --subtle: #64748b;
+  --line: #e2e8f0;
+  --accent: #2563eb;
+  --accent-2: #0f766e;
+  --chip-bg: #eff6ff;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 14px 32px rgba(0, 0, 0, 0.10);
+  --max: 880px;
+  --gap: 18px;
+  --r: 14px;
+  --font: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+main { padding-block: 36px; }
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 10px;
+  background: #000;
+  color: #fff;
+  border-radius: 8px;
+  z-index: 100;
+}
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 14px 24px;
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: saturate(140%) blur(14px);
+  -webkit-backdrop-filter: saturate(140%) blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.nav { display: inline-flex; gap: 14px; align-items: center; }
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.nav a:hover { color: var(--text); }
+
+/* HERO */
+.hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 34px 24px 10px;
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: clamp(1rem, 0.94rem + 0.2vw, 1.18rem);
+  max-width: 68ch;
+  margin: 0 0 22px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.generator-section {
+  display: flex;
+  justify-content: center;
+  padding: 18px 24px 8px;
+}
+
+.generator {
+  width: 100%;
+  max-width: 560px;
+  display: grid;
+  gap: 14px;
+  background: #ffffff;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+}
+
+/* Tabs */
+.tabs {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.tab[aria-selected="true"] {
+  background: var(--chip-bg);
+  color: var(--accent);
+  border-color: #bcc7ff;
+}
+
+/* Form */
+.schema-form {
+  display: grid;
+  gap: 10px;
+}
+
+.field { display: grid; gap: 6px; }
+
+.label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.btn {
+  padding: 11px 14px;
+  border-radius: 9px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  background: #fff;
+  color: var(--text);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.btn.small {
+  padding: 8px 10px;
+  font-size: 0.85rem;
+}
+
+.btn:active { transform: translateY(0.5px); }
+
+/* Result */
+.result {
+  overflow: auto;
+  border-radius: 10px;
+  padding: 18px;
+  background: var(--chip-bg);
+  border: 1px solid #e2e3ff;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  background: #fff;
+  border: 1px solid #c6ddff;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #0f172a;
+  white-space: pre;
+  margin: 0;
+}
+
+/* Content sections */
+.content,
+.validator,
+.faq,
+.privacy {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 8px 24px 6px;
+}
+
+.section-lead {
+  color: var(--muted);
+  max-width: 68ch;
+}
+
+.content h2,
+.validator h2,
+.faq h2,
+.privacy h2 {
+  font-size: 1.4rem;
+  margin: 38px 0 10px;
+  letter-spacing: -0.01em;
+}
+
+.content h3,
+.validator h3,
+.faq h3 {
+  font-size: 1.1rem;
+  margin: 24px 0 6px;
+}
+
+.content p,
+.validator p,
+.faq p,
+.privacy p {
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+/* How-to steps */
+.steps {
+  display: grid;
+  gap: 16px;
+}
+
+.step {
+  padding: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  box-shadow: var(--shadow);
+}
+
+/* Examples */
+.examples {
+  display: grid;
+  gap: 16px;
+}
+
+.example {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.example h3 {
+  padding: 12px 14px 10px;
+  margin: 0;
+  background: #f8fafc;
+  border-bottom: 1px solid var(--line);
+  font-size: 1rem;
+}
+
+.example .code {
+  padding: 14px;
+  border-radius: 0;
+}
+
+/* FOOTER */
+.site-footer {
+  max-width: var(--max);
+  margin: 40px auto 0;
+  padding: 22px 24px;
+  border-top: 1px solid var(--line);
+  color: var(--subtle);
+  font-size: 0.9rem;
+}
+
+/* Focus outline enhancement */
+:focus-visible {
+  outline: 3px solid #4f46e5;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .site-header { padding: 12px 14px; }
+  .generator { padding: 16px; }
+  .actions { flex-direction: column; }
+  .btn { width: 100%; }
+}

@@ -1,0 +1,116 @@
+{
+  "site": {
+    "name": "AI Search Schema Generator",
+    "baseUrl": "https://www.example.com/ai-search-schema-generator",
+    "category": "AI",
+    "entityType": "WebApplication / SoftwareApplication"
+  },
+  "primaryKeyword": "validate json-ld for perplexity, ai search engine structured data generator",
+  "keywords": [
+    "perplexity schema generator",
+    "ai search engine structured data",
+    "json-ld for perplexity",
+    "perplexity structured data validator",
+    "openai search json-ld generator",
+    "claude search citation schema",
+    "ai crawler structured data",
+    "llm-friendly json-ld",
+    "ai search schema validator",
+    "perplexity citation structured data",
+    "openai structured data generator",
+    "ai engine schema markup tool"
+  ],
+  "routes": {
+    "default": {
+      "path": "/",
+      "title": "Free AI Search Schema Generator — JSON-LD for Perplexity, OpenAI Search & Claude",
+      "description": "Generate and validate JSON-LD structured data for AI search engines (Perplexity, OpenAI Search, Claude). Optimize for LLM citations. Free, instant, no sign-up.",
+      "h1": "Free AI Search Schema Generator — JSON-LD for Perplexity, OpenAI Search & Claude",
+      "lead": "A developer-friendly JSON-LD generator built specifically for modern AI search engines. Create WebApplication, FAQPage, and HowTo schemas that help Perplexity, OpenAI Search, and Claude cite your content with confidence and accuracy.",
+      "variants": ["perplexity", "openai", "claude"]
+    },
+    "perplexity": {
+      "path": "/perplexity",
+      "title": "Perplexity Schema Generator — Create JSON-LD for Perplexity Citation & Answers",
+      "description": "Generate structured data optimized for Perplexity citation. Create JSON-LD schemas (WebApplication, FAQPage, HowTo) that Perplexity uses to cite your content in AI-generated answers.",
+      "h1": "Perplexity Schema Generator — Create JSON-LD for Perplexity Citation & Answers",
+      "lead": "Build JSON-LD markup that helps Perplexity understand and cite your website. Optimize for AI-generated answers with schema.org structured data templates built for Perplexity's crawlers.",
+      "variants": ["perplexity"]
+    },
+    "openai": {
+      "path": "/openai-search",
+      "title": "OpenAI Search Schema Generator — JSON-LD for OpenAI Search & GPT Citations",
+      "description": "Generate JSON-LD for OpenAI Search and GPT-powered search engines. Build structured data that improves citation accuracy and content retrieval for AI search experiences.",
+      "h1": "OpenAI Search Schema Generator — JSON-LD for OpenAI Search & GPT Citations",
+      "lead": "JSON-LD schema generator optimized for OpenAI Search and GPT-based retrieval. Create WebApplication, Organization, and FAQPage schemas that AI engines index reliably.",
+      "variants": ["openai"]
+    },
+    "faq": {
+      "path": "/faq",
+      "title": "AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data",
+      "description": "Frequently asked questions about JSON-LD for AI crawlers: Does Perplexity read JSON-LD? What schema types do AI engines prefer? How do I validate structured data for LLM indexing?",
+      "h1": "AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data",
+      "lead": "Common questions about using JSON-LD to help AI search engines discover, index, and cite your content accurately.",
+      "variants": ["perplexity", "openai", "claude"]
+    },
+    "validator": {
+      "path": "/validator",
+      "title": "Free JSON-LD Validator for AI Search Engines — Check Perplexity, OpenAI, Claude",
+      "description": "Validate JSON-LD structured data for AI search engines. Validate schema.org markup against Perplexity, OpenAI Search, and Claude indexing requirements.",
+      "h1": "Free JSON-LD Validator for AI Search Engines — Check Perplexity, OpenAI, Claude",
+      "lead": "Paste your JSON-LD and validate it recursively for AI search compatibility. Tests schema.org structure, required fields, AI-specific properties, and cross-engine readability.",
+      "variants": ["perplexity", "openai", "claude"]
+    }
+  },
+  "validationRules": {
+    "requiredFields": [
+      "@context",
+      "@type",
+      "name",
+      "url"
+    ],
+    "aiFriendlyRequired": [
+      "description",
+      "applicationCategory",
+      "operatingSystem",
+      "offers"
+    ],
+    "enhancedCitation": [
+      "image",
+      "author",
+      "dateModified",
+      "inLanguage",
+      "mainEntityOfPage"
+    ],
+    "typesSupported": [
+      "WebApplication",
+      "SoftwareApplication",
+      "Organization",
+      "FAQPage",
+      "HowTo",
+      "Article",
+      "CreativeWork"
+    ]
+  },
+  "hierarchy": {
+    "h2Required": [
+      "Generate AI Search Engine Schema",
+      "How to Use the AI Schema Generator",
+      "Which AI Engines Read JSON-LD",
+      "Validation Best Practices"
+    ],
+    "h3Templates": [
+      "Step-by-step JSON-LD generator for {engine}",
+      "Recursive JSON-LD validation explained",
+      "Schema properties AI engines expect",
+      "Avoiding duplicate content with canonical URLs",
+      "FAQPage JSON-LD for {engine} citations"
+    ]
+  },
+  "contentRequirements": {
+    "minWordsAroundTool": 300,
+    "maxWordsAroundTool": 500,
+    "noLogin": true,
+    "privacyNote": "No data leaves your browser. JSON-LD is generated client-side and never transmitted."
+  }
+}

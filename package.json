@@ -1,0 +1,16 @@
+{
+  "name": "ai-search-schema-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/generate-routes.js",
+    "preview": "vite preview",
+    "routes": "node scripts/generate-routes.js",
+    "serve": "node scripts/static-server.mjs"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
