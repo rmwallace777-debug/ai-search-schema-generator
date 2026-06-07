@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "AI Search Schema Generator",
-    "baseUrl": "https://www.example.com/ai-search-schema-generator",
+    "baseUrl": "https://utilitylab.dev/ai-search-schema-generator",
     "category": "AI",
     "entityType": "WebApplication / SoftwareApplication"
   },

@@ -24,7 +24,7 @@ const routes = {
     lead: 'A browser-based JSON-LD generator that helps you create schema.org markup optimized for modern AI search engines. Build WebApplication, FAQPage, and HowTo schemas that help Perplexity, OpenAI Search, and Claude cite your content accurately.',
     schemaName: 'AI Search Schema Generator',
     schemaDesc: 'A free, client-side tool that generates and validates JSON-LD structured data for AI search engines (Perplexity, OpenAI Search, Claude). Helps webmasters improve citation quality for LLM crawlers.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator'
   },
   perplexity: {
     title: 'Perplexity Schema Generator — Create JSON-LD for Perplexity Citation & Answers',
@@ -33,7 +33,7 @@ const routes = {
     lead: 'Build JSON-LD markup that helps Perplexity understand and cite your website. Optimize for AI-generated answers with schema.org structured data templates built for Perplexity crawlers.',
     schemaName: 'Perplexity Schema Generator',
     schemaDesc: 'Generate JSON-LD optimized for Perplexity citation, including WebApplication and FAQPage schemas.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator/perplexity'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator/perplexity'
   },
   openai: {
     title: 'OpenAI Search Schema Generator — JSON-LD for OpenAI Search & GPT Citations',
@@ -42,7 +42,7 @@ const routes = {
     lead: 'JSON-LD schema generator optimized for OpenAI Search and GPT-based retrieval. Create WebApplication, Organization, and FAQPage schemas that AI engines index reliably.',
     schemaName: 'OpenAI Search Schema Generator',
     schemaDesc: 'Generate schema.org JSON-LD tailored for OpenAI Search and GPT citation patterns.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator/openai-search'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator/openai-search'
   },
   claude: {
     title: 'Claude Search Schema Generator — JSON-LD for Claude Answer Engine',
@@ -51,7 +51,7 @@ const routes = {
     lead: 'A focused JSON-LD builder for Claude-style AI engines. Create WebApplication, Article, and HowTo schemas aligned with Claude indexing behavior.',
     schemaName: 'Claude Search Schema Generator',
     schemaDesc: 'Generate JSON-LD optimized for Claude-based AI search, with article and FAQ schemas.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator/claude'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator/claude'
   },
   validator: {
     title: 'Free JSON-LD Validator for AI Search Engines — Check Perplexity, OpenAI, Claude',
@@ -60,7 +60,7 @@ const routes = {
     lead: 'Paste your JSON-LD and validate it for AI search compatibility. Tests schema.org structure, required fields, AI-specific properties, and cross-engine readability.',
     schemaName: 'AI Search JSON-LD Validator',
     schemaDesc: 'Paste JSON-LD to validate schema.org structure and AI engine compatibility.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator/validator'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator/validator'
   },
   faq: {
     title: 'AI Engine Schema FAQ — Perplexity, OpenAI Search, Claude Structured Data',
@@ -69,7 +69,7 @@ const routes = {
     lead: 'Common questions about using JSON-LD to help AI search engines discover, index, and cite your content accurately.',
     schemaName: 'AI Engine Schema FAQ',
     schemaDesc: 'A living FAQ about AI engine JSON-LD: Perplexity, OpenAI Search, Claude, and schema.org structured data.',
-    schemaUrl: 'https://www.example.com/ai-search-schema-generator/faq'
+    schemaUrl: 'https://utilitylab.dev/ai-search-schema-generator/faq'
   }
 };
 
